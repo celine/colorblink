@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:blink="http://schemas.android.com/apk/res/com.iot.colorblink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <com.iot.colorblink.ColorBlinkLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            blink:interval="1000"
+            blink:mode="overlay"
+            blink:color="@array/blinkcolors">
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ebf4fa"
+                android:textSize="60sp"/>
+        </com.iot.colorblink.ColorBlinkLayout>
+    </LinearLayout>
+
+</RelativeLayout>

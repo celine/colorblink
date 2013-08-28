@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ColorBlinkLayout">
+        <attr name="interval" format="integer"/>
+        <attr name="color" format="reference"/>
+        <attr name="mode">
+            <enum name="overlay" value="0"/>
+            <enum name="background" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
